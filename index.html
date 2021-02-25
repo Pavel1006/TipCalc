@@ -1,17 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <title>Bill Calculator</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=name=width, initial-scale-1" />
-  </head>
-  <body>
-    <div class="box">
-      <div class="title">Tip Calculator</div>
+<head>
+  <link rel="stylesheet" href="index.css" />
+  <title>Bill Calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="box">
+    <div class="title">Tip Calculator</div>
+    <p>How much was your bill?</p>
+    <div class="totalBill">
+      $ <input id="Total.bill" type="text" placeholder="Bill Amount" />
     </div>
-    <script>
-      src = "script/main.js";
-    </script>
-  </body>
+    <p>How was your service?</p>
+    <select id="myService">
+      <option class="textmid" disabled selected value="0">
+        Choose an Option
+      </option>
+      <option class="textmid" value="0.3">Outstanding</option>
+      <option class="textmid" value="0.2">Good</option>
+      <option class="textmid" value="0.15">It was OK</option>
+      <option class="textmid" value="0.1">Bad</option>
+      <option class="textmid" value="0.05">Terrible</option>
+    </select>
+    <p>How many people are sharing the bill?</p>
+    <div class="totalBill">
+      <input id="nrPeople" type="text" placeholder="Numbers of people" />
+    </div>
+    <button id="button" type="button">Calculate</button>
+    <div id="results"></div>
+  </div>
+  <script src="main.js"></script>
+  
+</body>
 </html>
