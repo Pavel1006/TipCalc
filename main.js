@@ -1,11 +1,10 @@
-let totalbill = document.getElementById("Total.bill").value;
-let myRate = document.getElementById("myService").value;
-let people = document.getElementById("nrPeople").value;
-
 function financial(x) {
   return Number.parseFloat(x).toFixed(2);
 }
 function TipAmoung() {
+  let totalbill = document.getElementById("total_bill").value;
+  let myRate = document.getElementById("myService").value;
+  let people = document.getElementById("nrPeople").value;
   if (
     people === "" ||
     people === 0 ||
@@ -26,6 +25,4 @@ function TipAmoung() {
     }
   }
 }
-document.getElementById("button").onclick = function calculate() {
-  TipAmoung();
-};
+document.getElementById("button").onclick = TipAmoung;
