@@ -1,6 +1,7 @@
 let totalbill = document.getElementById("Total.bill").value;
 let myRate = document.getElementById("myService").value;
 let people = document.getElementById("nrPeople").value;
+
 function financial(x) {
   return Number.parseFloat(x).toFixed(2);
 }
@@ -10,7 +11,6 @@ function TipAmoung() {
     people === 0 ||
     totalbill === "" ||
     totalbill === 0 ||
-    myRate === "" ||
     myRate === 0
   ) {
     return alert("enter the value pls");
