@@ -13,16 +13,16 @@ function TipAmoung() {
     myRate === "" ||
     myRate === 0
   ) {
-    alert("enter the value pls");
+    return alert("enter the value pls");
   } else {
     if (people === 1) {
       let tip = (totalbill / people) * myRate;
-      document.getElementById("results").innerHTML =
-        " TIP AMOUNG $" + financial(tip);
+      return (document.getElementById("results").innerHTML =
+        " TIP AMOUNG $" + financial(tip));
     } else {
       let tip = (totalbill / people) * myRate;
-      document.getElementById("results").innerHTML =
-        "TIP AMOUNG $" + financial(tip) + " each";
+      return (document.getElementById("results").innerHTML =
+        "TIP AMOUNG $" + financial(tip) + " each");
     }
   }
 }
